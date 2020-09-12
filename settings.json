@@ -9,7 +9,6 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     // You can add more global application settings here.
     // To learn more about global settings, visit https://aka.ms/terminal-global-settings
-
     // If enabled, selections are automatically copied to your clipboard.
     "copyOnSelect": false,
     // If enabled, formatted data is also copied to your clipboard
@@ -18,10 +17,15 @@
     // Each one of them will appear in the 'New Tab' dropdown,
     //   and can be invoked from the commandline with `wt.exe -p xxx`
     // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
+    //Use "colorScheme": "Campbell Powershell" for light theme if requested during presentations
     "profiles": {
         "defaults": {
             // Put settings here that you want to apply to all profiles.
-            "fontFace": "Cascadia Code PL"
+            "fontFace": "Cascadia Code PL",
+            "startingDirectory": "C:\\Dev",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.8,
+            "colorScheme": "Chester"
         },
         "list": [
             {
@@ -46,7 +50,7 @@
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
+                "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             }
@@ -54,7 +58,50 @@
     },
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
-    "schemes": [],
+    "schemes": [
+        {
+            "name": "Chester",
+            "black": "#080200",
+            "red": "#fa5e5b",
+            "green": "#16c98d",
+            "yellow": "#ffc83f",
+            "blue": "#288ad6",
+            "purple": "#d34590",
+            "cyan": "#28ddde",
+            "white": "#e7e7e7",
+            "brightBlack": "#6f6b68",
+            "brightRed": "#fa5e5b",
+            "brightGreen": "#16c98d",
+            "brightYellow": "#feef6d",
+            "brightBlue": "#278ad6",
+            "brightPurple": "#d34590",
+            "brightCyan": "#27dede",
+            "brightWhite": "#ffffff",
+            "background": "#2c3643",
+            "foreground": "#ffffff"
+        },
+        {
+            "name": "Pro",
+            "black": "#000000",
+            "red": "#990000",
+            "green": "#00a600",
+            "yellow": "#999900",
+            "blue": "#2009db",
+            "purple": "#b200b2",
+            "cyan": "#00a6b2",
+            "white": "#bfbfbf",
+            "brightBlack": "#666666",
+            "brightRed": "#e50000",
+            "brightGreen": "#00d900",
+            "brightYellow": "#e5e500",
+            "brightBlue": "#0000ff",
+            "brightPurple": "#e500e5",
+            "brightCyan": "#00e5e5",
+            "brightWhite": "#e5e5e5",
+            "background": "#000000",
+            "foreground": "#f2f2f2"
+        }
+    ],
     // Add custom keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
     // To learn more about keybindings, visit https://aka.ms/terminal-keybindings
